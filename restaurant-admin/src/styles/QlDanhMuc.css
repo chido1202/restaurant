@@ -1,0 +1,65 @@
+.qldanhmuc-container {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  color: white;
+}
+
+.qldanhmuc-container h2 {
+  margin-bottom: 20px;
+  color: #00d4ff;
+}
+
+/* Tùy chỉnh màu cho Antd Table trong dark mode */
+.qldanhmuc-container .ant-table {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.qldanhmuc-container .ant-table-thead > tr > th {
+  background-color: #333;
+  color: white;
+  border-bottom: 1px solid #444;
+}
+
+.qldanhmuc-container .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #444;
+  color: #ddd;
+}
+
+.qldanhmuc-container .ant-table-tbody > tr:hover > td {
+  background-color: #3a3a3a;
+}
+
+.qldanhmuc-container .ant-pagination-item {
+  background-color: #333;
+  border-color: #555;
+}
+
+.qldanhmuc-container .ant-pagination-item a {
+  color: #ddd;
+}
+
+.qldanhmuc-container .ant-pagination-item-active {
+  background-color: #00d4ff;
+  border-color: #00d4ff;
+}
+
+.qldanhmuc-container .ant-pagination-item-active a {
+  color: #000;
+}
+
+.qldanhmuc-container .ant-select-selector {
+  background-color: #333 !important;
+  color: white;
+  border-color: #555 !important;
+}
+
+.qldanhmuc-container .ant-select-arrow {
+  color: #ddd;
+}
+
+/* Tùy chỉnh màu nút */
+.qldanhmuc-container .ant-btn {
+  border-radius: 4px;
+}

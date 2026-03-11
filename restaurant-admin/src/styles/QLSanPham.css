@@ -1,0 +1,121 @@
+.qlsanpham-container {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  color: white;
+}
+
+.qlsanpham-container h2 {
+  margin-bottom: 20px;
+  color: #00d4ff;
+}
+
+/* Tùy chỉnh màu cho Antd Table trong dark mode */
+.qlsanpham-container .ant-table {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.qlsanpham-container .ant-table-thead > tr > th {
+  background-color: #333;
+  color: white;
+  border-bottom: 1px solid #444;
+}
+
+.qlsanpham-container .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #444;
+  color: #ddd;
+}
+
+.qlsanpham-container .ant-table-tbody > tr:hover > td {
+  background-color: #3a3a3a;
+}
+
+.qlsanpham-container .ant-pagination-item {
+  background-color: #333;
+  border-color: #555;
+}
+
+.qlsanpham-container .ant-pagination-item a {
+  color: #ddd;
+}
+
+.qlsanpham-container .ant-pagination-item-active {
+  background-color: #00d4ff;
+  border-color: #00d4ff;
+}
+
+.qlsanpham-container .ant-pagination-item-active a {
+  color: #000;
+}
+
+.qlsanpham-container .ant-select-selector {
+  background-color: #333 !important;
+  color: white;
+  border-color: #555 !important;
+}
+
+.qlsanpham-container .ant-select-arrow {
+  color: #ddd;
+}
+
+/* Tag styling */
+.qlsanpham-container .ant-tag {
+  font-size: 14px;
+  padding: 2px 8px;
+}
+
+/* Space between buttons */
+.qlsanpham-container .ant-space {
+  gap: 8px;
+}
+
+/* Modal customization */
+.qlsanpham-modal .ant-modal-content {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.qlsanpham-modal .ant-modal-header {
+  background-color: #2a2a2a;
+  border-bottom: 1px solid #444;
+}
+
+.qlsanpham-modal .ant-modal-title {
+  color: white;
+}
+
+.qlsanpham-modal .ant-modal-close-x {
+  color: #ddd;
+}
+
+.qlsanpham-modal .ant-form-item-label > label {
+  color: #ddd;
+}
+
+.qlsanpham-modal .ant-input,
+.qlsanpham-modal .ant-input-number,
+.qlsanpham-modal .ant-select-selector,
+.qlsanpham-modal .ant-input-number-input {
+  background-color: #3a3a3a !important;
+  color: white !important;
+  border-color: #555 !important;
+}
+
+.qlsanpham-modal .ant-input-number-handler-wrap {
+  background-color: #444;
+}
+
+.qlsanpham-modal .ant-input-number-handler {
+  color: #ddd;
+}
+
+.qlsanpham-modal .ant-btn-primary {
+  background-color: #1890ff;
+}
+
+.qlsanpham-modal .ant-btn-default {
+  background-color: transparent;
+  border-color: #555;
+  color: #ddd;
+}

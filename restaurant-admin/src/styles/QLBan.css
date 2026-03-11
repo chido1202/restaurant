@@ -1,0 +1,125 @@
+.qlban-container {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  color: white;
+}
+
+.qlban-container h2 {
+  margin-bottom: 20px;
+  color: #00d4ff;
+  font-size: 24px;
+}
+
+/* Tùy chỉnh màu cho Antd Table trong dark mode */
+.qlban-container .ant-table {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.qlban-container .ant-table-thead>tr>th {
+  background-color: #333;
+  color: white;
+  border-bottom: 1px solid #444;
+}
+
+.qlban-container .ant-table-tbody>tr>td {
+  border-bottom: 1px solid #444;
+  color: #ddd;
+}
+
+.qlban-container .ant-table-tbody>tr:hover>td {
+  background-color: #3a3a3a;
+}
+
+.qlban-container .ant-pagination-item {
+  background-color: #333;
+  border-color: #555;
+}
+
+.qlban-container .ant-pagination-item a {
+  color: #ddd;
+}
+
+.qlban-container .ant-pagination-item-active {
+  background-color: #00d4ff;
+  border-color: #00d4ff;
+}
+
+.qlban-container .ant-pagination-item-active a {
+  color: #000;
+}
+
+.qlban-container .ant-select-selector {
+  background-color: #333 !important;
+  color: white;
+  border-color: #555 !important;
+}
+
+.qlban-container .ant-select-arrow {
+  color: #ddd;
+}
+
+/* Tùy chỉnh màu nút */
+.qlban-container .ant-btn {
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+/* Tùy chỉnh tags hiển thị trạng thái */
+.qlban-container .ant-tag {
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+/* Tùy chỉnh màu sắc cho các trạng thái */
+.ant-tag-green {
+  background-color: #f6ffed;
+  border-color: #b7eb8f;
+  color: #52c41a;
+}
+
+.ant-tag-gold {
+  background-color: #fffbe6;
+  border-color: #ffe58f;
+  color: #faad14;
+}
+
+.ant-tag-red {
+  background-color: #fff2f0;
+  border-color: #ffccc7;
+  color: #ff4d4f;
+}
+
+.ant-tag-blue {
+  background-color: #e6f7ff;
+  border-color: #91d5ff;
+  color: #1890ff;
+}
+
+/* Style cho bảng */
+.qlban-container .ant-table-wrapper {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .qlban-container {
+    padding: 10px;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ant-table {
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 8px;
+}

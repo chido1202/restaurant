@@ -1,0 +1,132 @@
+.qlsukien-container {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  color: white;
+}
+
+.qlsukien-container h2 {
+  margin-bottom: 20px;
+  color: #00d4ff;
+}
+
+/* Tùy chỉnh màu cho Antd Table trong dark mode */
+.qlsukien-container .ant-table {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.qlsukien-container .ant-table-thead>tr>th {
+  background-color: #333;
+  color: white;
+  border-bottom: 1px solid #444;
+}
+
+.qlsukien-container .ant-table-tbody>tr>td {
+  border-bottom: 1px solid #444;
+  color: #ddd;
+}
+
+.qlsukien-container .ant-table-tbody>tr:hover>td {
+  background-color: #3a3a3a;
+}
+
+.qlsukien-container .ant-pagination-item {
+  background-color: #333;
+  border-color: #555;
+}
+
+.qlsukien-container .ant-pagination-item a {
+  color: #ddd;
+}
+
+.qlsukien-container .ant-pagination-item-active {
+  background-color: #00d4ff;
+  border-color: #00d4ff;
+}
+
+.qlsukien-container .ant-pagination-item-active a {
+  color: #000;
+}
+
+.qlsukien-container .ant-select-selector {
+  background-color: #333 !important;
+  color: white;
+  border-color: #555 !important;
+}
+
+.qlsukien-container .ant-select-arrow {
+  color: #ddd;
+}
+
+/* Tùy chỉnh màu nút */
+.qlsukien-container .ant-btn {
+  border-radius: 4px;
+}
+
+/* Tùy chỉnh form trong modal */
+.ant-modal-content {
+  background-color: #2a2a2a;
+}
+
+.ant-modal-header {
+  background-color: #333;
+  border-bottom: 1px solid #444;
+}
+
+.ant-modal-title {
+  color: white;
+}
+
+.ant-modal-close-x {
+  color: #ddd;
+}
+
+.ant-modal-footer {
+  border-top: 1px solid #444;
+}
+
+.ant-form-item-label>label {
+  color: #ddd;
+}
+
+.ant-input::placeholder {
+  color: #999;
+}
+
+.ant-input-number-handler-wrap {
+  background-color: #3a3a3a;
+}
+
+.ant-picker-input>input {
+  color: white;
+}
+
+.ant-picker-suffix {
+  color: #ddd;
+}
+
+.ant-switch {
+  background-color: #666;
+}
+
+.ant-switch-checked {
+  background-color: #00d4ff;
+}
+
+/* Tùy chỉnh tabs */
+.ant-tabs-nav {
+  margin-bottom: 20px;
+}
+
+.ant-tabs-tab {
+  color: #ddd !important;
+}
+
+.ant-tabs-tab-active {
+  color: #00d4ff !important;
+}
+
+.ant-tabs-ink-bar {
+  background-color: #00d4ff !important;
+}

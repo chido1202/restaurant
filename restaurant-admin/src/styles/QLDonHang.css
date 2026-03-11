@@ -1,0 +1,100 @@
+.qldonhang-container {
+  padding: 20px;
+}
+
+.qldonhang-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Tùy chỉnh bảng */
+.ant-table-thead>tr>th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+}
+
+/* Tùy chỉnh form trong modal */
+.ant-modal-body .ant-form-item-label>label {
+  font-weight: 500;
+}
+
+/* Tùy chỉnh cho drawer chi tiết */
+.ant-descriptions-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.ant-descriptions-item-label {
+  font-weight: 500;
+}
+
+/* Tùy chỉnh phần danh sách sản phẩm */
+.ant-list-bordered {
+  margin-top: 16px;
+}
+
+/* Điều chỉnh khoảng cách các nút action */
+.ant-space {
+  display: flex;
+}
+
+/* Tùy chỉnh kích thước nút */
+.ant-btn-sm {
+  font-size: 12px;
+  height: 24px;
+  padding: 0px 7px;
+}
+
+/* Hiệu ứng hover cho các hàng trong bảng */
+.ant-table-tbody>tr:hover>td {
+  background-color: #f0f5ff;
+}
+
+/* Tùy chỉnh cho tag trạng thái */
+.ant-tag {
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Responsive điều chỉnh */
+@media (max-width: 768px) {
+  .ant-table {
+    overflow-x: auto;
+  }
+
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ant-table {
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 8px;
+}
+
+.delivery-address {
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border-left: 3px solid #1890ff;
+}
+
+.delivery-address p {
+  margin: 8px 0;
+}
+
+.delivery-address strong {
+  color: #555;
+  display: inline-block;
+  min-width: 120px;
+}
