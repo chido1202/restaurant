@@ -1,0 +1,91 @@
+/* Sửa lỗi hiển thị Hero Section */
+.hero {
+  position: relative; /* Đảm bảo ::before không che mất nội dung */
+  background-image: url('../assets/hero-image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden; /* Giữ nguyên để tránh tràn nội dung */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Lớp phủ đen */
+  z-index: 0; /* Giữ lớp phủ phía dưới nội dung */
+}
+
+.hero-content {
+  position: relative; /* Đảm bảo nội dung luôn trên overlay */
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero-content span {
+  color: gold;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Thêm khoảng cách giữa các nút */
+  margin-top: 15px;
+}
+
+.menu-btn, .booking-btn {
+  padding: 12px 24px;
+  border: 2px solid gold;
+  background: transparent;
+  color: gold;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 30px; /* Bo tròn nút */
+}
+
+.menu-btn:hover, .booking-btn:hover {
+  background: gold;
+  color: black;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.hero-content .btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}

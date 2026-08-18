@@ -1,0 +1,97 @@
+.chef-gallery-container {
+    background: #242223;
+    color: white;
+    padding: 50px 5%;
+    text-align: center;
+  }
+  
+  /* ===== OUR CHEFS ===== */
+  .our-chefs h2 {
+    color: #e0b354;
+    font-size: 38px;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  }
+  
+  .our-chefs p {
+    color: #aaa;
+    margin-bottom: 30px;
+  }
+  
+  .chefs-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .chef-card {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .chef-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .chef-card h3 {
+    margin: 10px 0 5px;
+    font-size: 25px;
+  }
+  
+  .chef-card p {
+    color: #e0b354;
+    font-size: 18px;
+  }
+  
+ /* ===== GALLERY ===== */
+.gallery {
+  margin-top: 60px;
+}
+
+.gallery h2 {
+  font-size: 38px;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.gallery p {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* GRID GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  gap: 10px;
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-item:nth-child(4) {
+  grid-column: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}

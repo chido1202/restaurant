@@ -1,0 +1,574 @@
+/* Reset và base styles cho Booking */
+.bk-container,
+.bk-container * {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.bk-container {
+  width: 90% !important;
+  max-width: 1200px !important;
+  margin: 120px auto 40px !important;
+  min-height: 70vh !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.bk-container h2 {
+  font-size: 32px !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  margin-bottom: 30px !important;
+  margin-top: 80px !important;
+  position: relative !important;
+  color: #333 !important;
+}
+
+.bk-container h2::after {
+  content: "" !important;
+  display: block !important;
+  width: 60px !important;
+  height: 3px !important;
+  background-color: #d1a051 !important;
+  margin: 10px auto 0 !important;
+}
+
+.bk-container h3 {
+  font-size: 22px !important;
+  margin-bottom: 20px !important;
+  color: #333 !important;
+  border-bottom: 2px solid #eee !important;
+  padding-bottom: 10px !important;
+  font-weight: 600 !important;
+}
+
+/* Thông báo */
+.bk-alert {
+  padding: 15px !important;
+  margin-bottom: 20px !important;
+  border-radius: 8px !important;
+  text-align: center !important;
+  font-size: 15px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.bk-alert.success {
+  background-color: rgba(46, 204, 113, 0.1) !important;
+  color: #2ecc71 !important;
+  border: 1px solid rgba(46, 204, 113, 0.2) !important;
+}
+
+.bk-alert.error {
+  background-color: rgba(231, 76, 60, 0.1) !important;
+  color: #e74c3c !important;
+  border: 1px solid rgba(231, 76, 60, 0.2) !important;
+}
+
+.bk-alert-icon {
+  margin-right: 10px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Phần giỏ hàng */
+.bk-cart-section {
+  margin-bottom: 40px !important;
+  background-color: #fff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+  padding: 25px !important;
+}
+
+.bk-cart-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin-bottom: 30px !important;
+  background: #fff !important;
+}
+
+.bk-cart-table th,
+.bk-cart-table td {
+  border: none !important;
+  border-bottom: 1px solid #eee !important;
+  padding: 15px !important;
+  text-align: center !important;
+  font-size: 14px !important;
+}
+
+.bk-cart-table thead {
+  background-color: #f8f9fa !important;
+}
+
+.bk-cart-table th {
+  font-weight: 600 !important;
+  color: #555 !important;
+}
+
+.bk-cart-table img {
+  width: 80px !important;
+  height: 60px !important;
+  object-fit: cover !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.bk-quantity-controls {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+}
+
+.bk-quantity-btn {
+  width: 30px !important;
+  height: 30px !important;
+  background: #f0f0f0 !important;
+  border: 1px solid #ddd !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s !important;
+}
+
+.bk-quantity-btn:hover {
+  background: #e0e0e0 !important;
+}
+
+.bk-delete-btn {
+  background-color: #ff6b6b !important;
+  color: white !important;
+  border: none !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  font-size: 13px !important;
+  transition: all 0.3s !important;
+}
+
+.bk-delete-btn:hover {
+  background-color: #fa5252 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 3px 8px rgba(250, 82, 82, 0.2) !important;
+}
+
+.bk-total-row td {
+  border-bottom: none !important;
+}
+
+.bk-total-label {
+  text-align: right !important;
+  font-weight: bold !important;
+  color: #333 !important;
+}
+
+.bk-total-price {
+  font-weight: bold !important;
+  color: #d1a051 !important;
+  font-size: 18px !important;
+}
+
+.bk-empty-cart {
+  text-align: center !important;
+  padding: 30px !important;
+  background: #f9f9f9 !important;
+  border-radius: 8px !important;
+  color: #666 !important;
+  font-size: 15px !important;
+}
+
+.bk-empty-cart a {
+  color: #d1a051 !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: color 0.2s !important;
+}
+
+.bk-empty-cart a:hover {
+  color: #ba8c3c !important;
+  text-decoration: underline !important;
+}
+
+/* Form đặt bàn */
+.bk-booking-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  background: #fff !important;
+  padding: 30px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.bk-form-group {
+  display: flex !important;
+  gap: 15px !important;
+}
+
+.bk-form-group.single {
+  display: block !important;
+}
+
+.bk-form-control {
+  flex: 1 !important;
+  margin-bottom: 15px !important;
+}
+
+.bk-form-control label {
+  display: block !important;
+  margin-bottom: 8px !important;
+  font-weight: 600 !important;
+  color: #444 !important;
+  font-size: 14px !important;
+}
+
+.bk-form-control input,
+.bk-form-control select,
+.bk-form-control textarea {
+  width: 100% !important;
+  padding: 12px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 8px !important;
+  background: #f9f9f9 !important;
+  font-size: 15px !important;
+  transition: all 0.3s !important;
+}
+
+.bk-form-control input:focus,
+.bk-form-control select:focus,
+.bk-form-control textarea:focus {
+  outline: none !important;
+  border-color: #d1a051 !important;
+  box-shadow: 0 0 0 2px rgba(209, 160, 81, 0.1) !important;
+}
+
+.bk-form-control textarea {
+  height: 120px !important;
+  resize: vertical !important;
+}
+
+.bk-submit-btn {
+  margin-top: 10px !important;
+  background-color: #d1a051 !important;
+  color: white !important;
+  border: none !important;
+  padding: 15px !important;
+  font-size: 16px !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.bk-submit-btn:hover {
+  background-color: #ba8c3c !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 5px 15px rgba(209, 160, 81, 0.2) !important;
+}
+
+.bk-submit-btn:disabled {
+  background-color: #cccccc !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.bk-submit-btn svg {
+  margin-right: 8px !important;
+}
+
+/* Thêm style mới cho phần chọn bàn */
+.bk-table-warning {
+  color: #ff6b6b !important;
+  font-size: 0.85em !important;
+  margin-top: 5px !important;
+  display: block !important;
+}
+
+.bk-table-info {
+  color: #4299e1 !important;
+  font-size: 0.85em !important;
+  margin-top: 5px !important;
+  display: block !important;
+}
+
+/* Phần mã giảm giá */
+.bk-discount-section {
+  margin: 20px 0 !important;
+  padding: 20px !important;
+  border: 1px solid #eee !important;
+  border-radius: 8px !important;
+  background-color: #f9f9f9 !important;
+}
+
+.bk-discount-section h4 {
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+  font-size: 18px !important;
+  color: #333 !important;
+  font-weight: 600 !important;
+}
+
+.bk-discount-input-container {
+  width: 100% !important;
+}
+
+.bk-discount-input {
+  display: flex !important;
+  gap: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.bk-discount-input input {
+  flex: 1 !important;
+  padding: 12px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 8px !important;
+  font-size: 15px !important;
+  background: #fff !important;
+}
+
+.bk-discount-input input:focus {
+  outline: none !important;
+  border-color: #4CAF50 !important;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1) !important;
+}
+
+.bk-discount-input button {
+  padding: 12px 20px !important;
+  background-color: #4CAF50 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  transition: all 0.3s !important;
+  white-space: nowrap !important;
+}
+
+.bk-discount-input button:hover {
+  background-color: #45a049 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 3px 8px rgba(76, 175, 80, 0.2) !important;
+}
+
+.bk-discount-input button:disabled {
+  background-color: #cccccc !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.bk-discount-error {
+  color: #ff6b6b !important;
+  font-size: 14px !important;
+  margin-top: 5px !important;
+}
+
+.bk-discount-applied {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background-color: #e8f5e9 !important;
+  padding: 15px !important;
+  border-radius: 8px !important;
+  margin-bottom: 15px !important;
+}
+
+.bk-discount-info p {
+  margin: 5px 0 !important;
+  font-size: 14px !important;
+  color: #333 !important;
+}
+
+.bk-remove-discount {
+  background-color: #ff6b6b !important;
+  color: white !important;
+  border: none !important;
+  padding: 8px 15px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  font-size: 13px !important;
+  transition: all 0.3s !important;
+}
+
+.bk-remove-discount:hover {
+  background-color: #fa5252 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 3px 8px rgba(250, 82, 82, 0.2) !important;
+}
+
+.bk-price-summary {
+  margin-top: 15px !important;
+  border-top: 1px dashed #ddd !important;
+  padding-top: 15px !important;
+}
+
+.bk-original-price,
+.bk-final-price {
+  display: flex !important;
+  justify-content: space-between !important;
+  margin-bottom: 5px !important;
+}
+
+.bk-original-price {
+  color: #888 !important;
+  font-size: 14px !important;
+}
+
+.bk-strikethrough {
+  text-decoration: line-through !important;
+}
+
+.bk-final-price {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: #333 !important;
+}
+
+.bk-discounted-price {
+  color: #4CAF50 !important;
+}
+
+/* Thêm styles cho phần thanh toán VNPay */
+.bk-payment-methods {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+  margin-top: 10px !important;
+}
+
+.bk-payment-method {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 15px !important;
+  border: 1px solid #eee !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: all 0.3s !important;
+  position: relative !important;
+}
+
+.bk-payment-method:hover {
+  background-color: #f9f9f9 !important;
+  border-color: #d1a051 !important;
+  box-shadow: 0 2px 8px rgba(209, 160, 81, 0.1) !important;
+}
+
+.bk-payment-method input[type="radio"] {
+  margin-right: 8px !important;
+  width: 20px !important;
+  height: 20px !important;
+  accent-color: #d1a051 !important;
+  cursor: pointer !important;
+}
+
+.bk-payment-method input[type="radio"]:checked+label {
+  color: #d1a051 !important;
+  font-weight: 600 !important;
+}
+
+.bk-payment-method label {
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  flex-grow: 1 !important;
+  font-size: 15px !important;
+  transition: color 0.2s !important;
+}
+
+.bk-payment-logo {
+  height: 30px !important;
+  object-fit: contain !important;
+  margin-left: 10px !important;
+  transition: transform 0.3s !important;
+}
+
+.bk-payment-method:hover .bk-payment-logo {
+  transform: translateY(-2px) !important;
+}
+
+.bk-payment-method:after {
+  content: "" !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 15px !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-right: 2px solid #ccc !important;
+  border-bottom: 2px solid #ccc !important;
+  transform: translateY(-50%) rotate(45deg) !important;
+  transition: all 0.3s !important;
+}
+
+.bk-payment-method:hover:after {
+  border-color: #d1a051 !important;
+  transform: translateY(-50%) rotate(45deg) translateX(5px) !important;
+}
+
+.bk-payment-method.active {
+  background-color: #fff9ef !important;
+  border-color: #d1a051 !important;
+}
+
+/* Responsive cho phần thanh toán */
+@media (max-width: 768px) {
+  .bk-payment-method {
+    padding: 12px !important;
+  }
+
+  .bk-payment-method label {
+    font-size: 14px !important;
+  }
+
+  .bk-payment-logo {
+    height: 25px !important;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bk-container {
+    width: 95% !important;
+  }
+
+  .bk-form-group {
+    flex-direction: column !important;
+  }
+
+  .bk-cart-table {
+    display: block !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+
+  .bk-cart-table img {
+    width: 60px !important;
+    height: 45px !important;
+  }
+
+  .bk-cart-table th,
+  .bk-cart-table td {
+    padding: 10px !important;
+  }
+
+  .bk-discount-input {
+    flex-direction: column !important;
+  }
+
+  .bk-discount-applied {
+    flex-direction: column !important;
+    gap: 10px !important;
+    text-align: center !important;
+  }
+}

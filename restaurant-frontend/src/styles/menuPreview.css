@@ -1,0 +1,261 @@
+.menu-preview {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 0;
+  background: #242223;
+  position: relative;
+}
+
+.menu-preview h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.menu-preview h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #d1a051;
+  margin: 10px auto 0;
+}
+
+/* Danh mục món ăn */
+.menu-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(209, 160, 81, 0.3);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 30px;
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.category-btn:hover {
+  background: rgba(209, 160, 81, 0.2);
+}
+
+.category-btn.active {
+  background: #d1a051;
+  color: white;
+  box-shadow: 0 5px 15px rgba(209, 160, 81, 0.3);
+}
+
+/* Danh sách món ăn */
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-preview-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-preview-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.menu-preview-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.menu-preview-item:hover img {
+  transform: scale(1.05);
+}
+
+.menu-preview-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-preview-item h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.menu-preview-item p {
+  color: #d1a051;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.menu-preview-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.preview-order-btn,
+.preview-detail-btn {
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.preview-order-btn {
+  background: #d1a051;
+  color: white;
+}
+
+.preview-order-btn:hover {
+  background: #ba8c3c;
+}
+
+.preview-detail-btn {
+  background: #f4f1eb;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-detail-btn:hover {
+  background: #e6e1d5;
+}
+
+/* Footer */
+.menu-preview-footer {
+  margin-top: 40px;
+}
+
+.see-all-btn {
+  background: transparent;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 2px solid #d1a051;
+  display: inline-block;
+}
+
+.see-all-btn:hover {
+  background: #d1a051;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(209, 160, 81, 0.3);
+}
+
+/* Thông báo */
+.preview-notification {
+  background-color: rgba(209, 160, 81, 0.9);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: previewFadeIn 0.3s, previewFadeOut 0.3s 2.7s;
+  font-size: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes previewFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes previewFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Loading state */
+.preview-loading {
+  color: white;
+  padding: 30px 0;
+  font-size: 18px;
+}
+
+/* Empty state */
+.preview-empty {
+  color: white;
+  padding: 30px 0;
+  font-size: 18px;
+  grid-column: 1 / -1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .menu-items {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .menu-preview h2 {
+    font-size: 28px;
+  }
+
+  .menu-categories {
+    overflow-x: auto;
+    padding-bottom: 15px;
+    justify-content: flex-start;
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .menu-categories::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+  }
+}

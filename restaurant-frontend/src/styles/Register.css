@@ -1,0 +1,151 @@
+/* ======= Bố cục trang ======= */
+.register-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+}
+
+/* ======= Hình ảnh trang trí ======= */
+.register-image {
+  flex: 1;
+  background: url("../assets/signup.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* ======= Form đăng ký ======= */
+.register-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: white;
+  overflow-y: auto;
+}
+
+/* ======= Tiêu đề và link đăng nhập ======= */
+.register-form h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #222;
+  position: relative;
+}
+
+.register-form h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffb03b;
+  margin: 8px auto 20px;
+}
+
+.register-form p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.register-form a {
+  color: #ffb03b;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register-form a:hover {
+  color: #ff6b6b;
+  text-decoration: underline;
+}
+
+.register-form form {
+  width: 100%;
+  max-width: 380px;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #444;
+  text-align: left;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.register-form input:focus {
+  border-color: #ffb03b;
+  box-shadow: 0 0 0 2px rgba(255, 176, 59, 0.2);
+  outline: none;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 14px;
+  background: #ffb03b;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(255, 176, 59, 0.3);
+  margin-top: 1rem;
+}
+
+.signup-btn:hover {
+  background: #ff6b6b;
+  transform: translateY(-2px);
+}
+
+.signup-btn:disabled {
+  background: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.message {
+  margin-bottom: 1.5rem;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+}
+
+.message.success {
+  color: #28a745;
+  background: rgba(40, 167, 69, 0.1);
+}
+
+.message.danger {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    flex-direction: column;
+  }
+
+  .register-image {
+    height: 30vh;
+  }
+
+  .register-form {
+    padding: 2rem 1.5rem;
+  }
+}
